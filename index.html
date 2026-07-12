@@ -384,7 +384,7 @@ footer .fl img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:
 <!-- SPLASH -->
 <div class="splash" id="splash">
   <div class="sp-logo"><img id="spLogo" alt="Frossty"></div>
-  <div class="sp-name">Mohriddin <b>Osh Markazi</b></div>
+  <div class="sp-name">Frossty</b></div>
   <div class="sp-sub" id="spSub">Milliy oshxona · Toshkent</div>
   <div class="sp-pick" id="spPick">Filialni tanlang · Выберите филиал · Choose branch</div>
   <div class="sp-langs" id="spBranches"></div>
@@ -959,7 +959,7 @@ async function sendChat(text){
   try{
     const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},
       body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:1000,messages:[{role:"user",content:
-`Sen "Mohriddin Osh Markazi" milliy oshxonasining AI yordamchisisan. Mijoz ${langName} tilida yozdi: "${text}". Javobni ${langName} tilida ber.
+`Sen "Frossty" milliy oshxonasining AI yordamchisisan. Mijoz ${langName} tilida yozdi: "${text}". Javobni ${langName} tilida ber.
 Menyu: ${JSON.stringify(menuShort)}
 FAQAT shu JSON formatda javob ber (markdownsiz): {"izoh":"1-2 jumlalik samimiy javob","tavsiya":["id"]}
 tavsiya massiviga mavjud id'lardan 1-3 ta. So'rov taomga aloqasiz bo'lsa tavsiya bo'sh.`}]})});
